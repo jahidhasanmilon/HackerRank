@@ -6,9 +6,11 @@ import sys
 
 
 def aVeryBigSum(ar):
+    total = 0
+    for i in range(len(ar)):
+        total += ar[i]
+    return total
     
-    return sum(ar)
-
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
@@ -20,4 +22,4 @@ if __name__ == '__main__':
 
     fptr.write(str(result) + '\n')
 
-    fptr.close(
+    fptr.close()
